@@ -1,0 +1,45 @@
+.rental__item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  background-color: #fafafa;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.rental__info {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.rental__thumbnail {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.rental__details {
+  flex: 1;
+}
+
+.rental__book-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.rental__btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rental__btn:hover {
+  background-color: #218838;
+}

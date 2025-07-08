@@ -1,0 +1,62 @@
+/* src/pages/BookDetails.css */
+.book-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.book-details__image {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.book-details__info {
+  text-align: left;
+  width: 100%;
+}
+
+.book-details__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.book-details__status {
+  color: green;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.book-details__rent-btn,
+.book-details__back-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book-details__rent-btn {
+  background-color: #0077cc;
+  color: white;
+  margin-right: 1rem;
+}
+
+.book-details__rent-btn:hover {
+  background-color: #005fa3;
+}
+
+.book-details__back-btn {
+  background-color: #eee;
+  color: #333;
+}
+
+.book-details__back-btn:hover {
+  background-color: #ddd;
+}

@@ -1,0 +1,44 @@
+.book-card {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.book-card__image {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.book-card__info {
+  padding: 1rem;
+  flex: 1;
+}
+
+.book-card__title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.book-card__author,
+.book-card__isbn,
+.book-card__year {
+  margin: 0.3rem 0;
+  color: #444;
+}
+
+.book-card__link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.book-card__link:hover {
+  text-decoration: underline;
+}
