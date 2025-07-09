@@ -29,7 +29,7 @@ export default function Rental() {
   };
 
   return (
-    <div className="rental">
+    <div className="page">
       <h2 className="rental__title">Mis Alquileres</h2>
       {rentedBooks.length === 0 ? (
         <p>No has alquilado libros aún.</p>

@@ -1,22 +1,27 @@
 .book-card {
-  display: flex;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  overflow: hidden;
   background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: #000;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 100%;
+  justify-content: space-between;
 }
 
 .book-card__image {
-  width: 120px;
-  height: 180px;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
   object-fit: cover;
 }
 
 .book-card__info {
-  padding: 1rem;
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .book-card__title {
@@ -32,11 +37,10 @@
 }
 
 .book-card__link {
-  display: inline-block;
   margin-top: 0.5rem;
+  font-weight: bold;
   color: #0077cc;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .book-card__link:hover {

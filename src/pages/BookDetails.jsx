@@ -26,7 +26,7 @@ export default function BookDetails() {
   };
 
   return (
-    <div className="book-details">
+    <div className="page">
       <img className="book-details__image" src={book.imagen} alt={book.nombre} />
       <div className="book-details__info">
         <h2 className="book-details__title">{book.nombre}</h2>
