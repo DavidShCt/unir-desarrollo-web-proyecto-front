@@ -2,53 +2,79 @@
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  flex-wrap: wrap;
   align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 5rem;
 }
 
 .book-details__image {
   width: 250px;
   max-width: 100%;
   border-radius: 8px;
+  flex-shrink: 0;
 }
 
 .book-details__info {
   flex: 1;
   min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .book-details__title {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
-.book-details__rent {
+.book-details__status {
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 1rem;
+}
+
+/* Botones bonitos y accesibles */
+.book-details__rent-btn,
+.book-details__back-btn {
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background-color: #28a745;
-  color: white;
+  font-size: 1rem;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.book-details__rent:hover {
-  background-color: #218838;
+.book-details__rent-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+.book-details__rent-btn:hover {
+  background-color: #45a049;
 }
 
-.page {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1200px;
-  padding: 2rem 1rem;
-  margin: 0 auto;
-  box-sizing: border-box;
+.book-details__back-btn {
+  background-color: #008CBA;
+  color: white;
+}
+.book-details__back-btn:hover {
+  background-color: #007bb5;
 }
 
+/* Responsive: apilar en columnas */
 @media (max-width: 768px) {
-  .page {
-    padding: 1rem;
+  .book-details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .book-details__info {
+    align-items: center;
+  }
+
+  .book-details__back-btn {
+    align-self: center;
   }
 }

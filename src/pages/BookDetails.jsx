@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { books } from "../data/books";
 import { useState } from "react";
 import "./BookDetails.css";
+import { FaArrowLeft } from "react-icons/fa";
 
 export default function BookDetails() {
   const { id } = useParams();
@@ -26,7 +27,7 @@ export default function BookDetails() {
   };
 
   return (
-    <div className="page">
+    <div className="book-details">
       <img className="book-details__image" src={book.imagen} alt={book.nombre} />
       <div className="book-details__info">
         <h2 className="book-details__title">{book.nombre}</h2>
@@ -45,7 +46,7 @@ export default function BookDetails() {
           </button>
         )}
 
-        <button onClick={() => navigate(-1)} className="book-details__back-btn">← Volver</button>
+        <button onClick={() => navigate(-1)} className="book-details__back-btn"><FaArrowLeft /> Volver</button>
       </div>
     </div>
   );
