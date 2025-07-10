@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 import "./BookCard.css";
 
 export default function BookCard({ book }) {
@@ -12,7 +13,7 @@ export default function BookCard({ book }) {
         <p className="book-card__year">Año: {book.año}</p>
 
         <Link to={`/libro/${book.id}`} className="book-card__link">
-          Ver detalles →
+          Ver detalles <FaArrowRight />
         </Link>
       </div>
     </div>

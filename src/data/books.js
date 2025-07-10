@@ -1,4 +1,10 @@
-// src/data/books.js
+import cienAnos from "../assets/cienAniosSoledad.jpg";
+import orwell1984 from "../assets/1984.jpg";
+import donQuijote from "../assets/donQuijote.jpg";
+import principito from "../assets/elPrincipito.jpg";
+import harryPotter from "../assets/harryPotter.jpg";
+import juegosHambre from "../assets/losJuegosDelHambre.jpg";
+
 export const books = [
   {
     id: 1,
@@ -7,12 +13,13 @@ export const books = [
     año: 1967,
     isbn10: "0307474720",
     isbn13: "9780307474728",
-    imagen: "https://images-na.ssl-images-amazon.com/images/I/81jpsrOdG3L.jpg",
-    sinopsis: "La historia épica de la familia Buendía en el pueblo ficticio de Macondo.",
+    imagen: cienAnos,
+    sinopsis: "Historia de la familia Buendía en Macondo.",
     criticas: ["Obra maestra", "Lectura imprescindible"],
     categoria: "Realismo mágico",
     idioma: "Español",
-    descripcion: "Novela de realismo mágico que explora el tiempo, el destino y la soledad a través de generaciones."
+    descripcion:
+      "Explora el tiempo, el destino y la soledad a través de generaciones.",
   },
   {
     id: 2,
@@ -21,12 +28,12 @@ export const books = [
     año: 1949,
     isbn10: "0451524934",
     isbn13: "9780451524935",
-    imagen: "https://images-na.ssl-images-amazon.com/images/I/71kxa1-0AfL.jpg",
-    sinopsis: "Una distopía que muestra una sociedad totalitaria vigilada por el Gran Hermano.",
+    imagen: orwell1984,
+    sinopsis: "Sociedad totalitaria vigilada por el Gran Hermano.",
     criticas: ["Atemporal", "Proféticamente inquietante"],
     categoria: "Ficción distópica",
     idioma: "Inglés",
-    descripcion: "Explora los peligros del autoritarismo, la censura y la manipulación de la verdad."
+    descripcion: "Denuncia el autoritarismo y la manipulación de la verdad.",
   },
   {
     id: 3,
@@ -35,12 +42,12 @@ export const books = [
     año: 1605,
     isbn10: "0060934344",
     isbn13: "9780060934347",
-    imagen: "https://images-na.ssl-images-amazon.com/images/I/71jLBXtWJWL.jpg",
-    sinopsis: "Las aventuras del caballero Don Quijote y su fiel escudero Sancho Panza.",
-    criticas: ["Divertido y reflexivo", "Clásico de la literatura española"],
+    imagen: donQuijote,
+    sinopsis: "Aventuras del caballero Don Quijote y su escudero.",
+    criticas: ["Divertido", "Clásico imprescindible"],
     categoria: "Novela de aventuras",
     idioma: "Español",
-    descripcion: "Una sátira de las novelas de caballería con un mensaje profundo sobre los sueños y la realidad."
+    descripcion: "Sátira sobre los sueños y la realidad.",
   },
   {
     id: 4,
@@ -49,12 +56,12 @@ export const books = [
     año: 1943,
     isbn10: "0156012197",
     isbn13: "9780156012195",
-    imagen: "https://images-na.ssl-images-amazon.com/images/I/81ZxJMAKQDL.jpg",
-    sinopsis: "Un aviador se encuentra con un niño de otro planeta que le enseña valiosas lecciones.",
-    criticas: ["Poético", "Emotivo y profundo"],
+    imagen: principito,
+    sinopsis: "Un aviador conoce a un niño de otro planeta.",
+    criticas: ["Poético", "Emotivo"],
     categoria: "Fábula filosófica",
     idioma: "Francés",
-    descripcion: "Una historia para niños y adultos sobre el amor, la pérdida y la importancia de ver con el corazón."
+    descripcion: "Reflexiona sobre el amor, la pérdida y la mirada interior.",
   },
   {
     id: 5,
@@ -63,11 +70,26 @@ export const books = [
     año: 1997,
     isbn10: "8478884459",
     isbn13: "9788478884452",
-    imagen: "https://images-na.ssl-images-amazon.com/images/I/81YOuOGFCJL.jpg",
-    sinopsis: "Un niño descubre que es mago y empieza su vida en el colegio Hogwarts.",
+    imagen: harryPotter,
+    sinopsis: "Niño descubre que es mago y va a Hogwarts.",
     criticas: ["Mágico", "Ideal para todas las edades"],
     categoria: "Fantasía",
     idioma: "Español",
-    descripcion: "Primera entrega de la famosa saga que mezcla magia, amistad y valentía."
-  }
+    descripcion: "Primera entrega de la saga mágica más popular.",
+  },  
+  {
+    id: 6,
+    nombre: "Los juegos del hambre",
+    autor: "Suzanne Collins",
+    año: 2008,
+    isbn10: "0439023521",
+    isbn13: "9780439023528",
+    imagen: juegosHambre,
+    sinopsis: "Katniss lucha por sobrevivir en una arena mortal.",
+    criticas: ["Adictivo", "Distopía moderna"],
+    categoria: "Ciencia ficción juvenil",
+    idioma: "Inglés",
+    descripcion:
+      "Una rebelión silenciosa contra una dictadura disfrazada de espectáculo.",
+  },
 ];
