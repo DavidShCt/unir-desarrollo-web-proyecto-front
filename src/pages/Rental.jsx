@@ -1,4 +1,3 @@
-// src/pages/Rental.jsx
 import { useEffect, useState } from "react";
 import { books } from "../data/books";
 import "./Rental.css";

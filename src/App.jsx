@@ -4,7 +4,6 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Rental from "./pages/Rental";
 import BookDetails from "./pages/BookDetails";
-import SearchResults from "./pages/SearchResults";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/alquileres" element={<Rental />} />
             <Route path="/libro/:id" element={<BookDetails />} />
-            <Route path="/buscar" element={<SearchResults />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
