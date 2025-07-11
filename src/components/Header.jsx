@@ -46,9 +46,6 @@ export default function Header() {
           <Link to="/alquileres" className="header__link" onClick={closeMenu}>
             <FaBookReader className="header__icon" /> Mis Alquileres
           </Link>
-          <Link to="/buscar" className="header__link" onClick={closeMenu}>
-            <FaSearch className="header__icon" /> Buscar
-          </Link>
         </nav>
       </div>
     </header>
